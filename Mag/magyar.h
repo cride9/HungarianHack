@@ -1,7 +1,7 @@
 ﻿#pragma once
-#include "KisHorgony/minhook.h"
-#include "KisHorgony/trampoline.h"
-#include "KisHorgony/detour.hpp"
+#include "../KülsőBővítmények/KisHorgony/minhook.h"
+#include "../KülsőBővítmények/KisHorgony/trampoline.h"
+#include "../KülsőBővítmények/KisHorgony/detour.hpp"
 #include <process.h>
 #include <Psapi.h>
 #include <Windows.h>
@@ -34,6 +34,7 @@
 #define kivonás -
 #define maradék %
 #define értékadás =
+#define nyíl ->
 
 //  TÍPUSOK
 #define űr void
@@ -47,6 +48,7 @@
 #define nagyonhosszú long long
 #define rövid short
 #define karakter char
+#define wkarakter wchar_t
 #define szöveg char *
 #define konstans const
 #define rekord struct
@@ -60,6 +62,7 @@
 #define rövidmutató short *
 #define hosszúmutató long *
 #define nagyonhosszúmutató long long *
+#define mutató *
 
 #define referencia &
 
@@ -96,6 +99,7 @@
 #define vessző ,
 #define visszatér return
 #define kettőspontkettőspont ::
+#define kettőspont :
 #define pont .
 
 // SZÖVEG LITERÁL
@@ -114,11 +118,24 @@
 #define vonalban inline
 #define névtér namespace
 #define állandó static
-#define állandóváltozás static_cast
+#define sablon template
+#define típusnév typename
+#define használ using
+#define ez this
+
+#define felsorolás enum
+#define osztály class
+#define nyilvános public
+#define magán private
+
+// KASZTOLÁSOK
+#define újraértelmezett_hajítás reinterpret_cast
+#define állandó_hajítás static_cast
 
 #define példa HINSTANCE
 #define fogantyú HANDLE
 #define egység HMODULE
+#define messzifolyamat FARPROC
 #define folyamatcsatolás DLL_PROCESS_ATTACH
 
 //  EGYÉB
@@ -144,49 +161,10 @@
 #define billentyűlenyomva GetAsyncKeyState
 #define alvás Sleep
 #define szabadítsdfelkönyvtáraséslépjkiaszálból FreeLibraryAndExitThread
+#define szerezdmegazegységfoganytút GetModuleHandle
+#define szerezdmegafolyamatcímet GetProcAddress
 
 #define motor "engine.dll"
 #define kl_mozgásminta "55 8B EC 81 EC ? ? ? ? 53 56 8A F9"
 
-#define INRANGE(x,a,b)   (x >= a && x <= b)
-#define GET_BYTE( x )    (GET_BITS(x[0]) << 4 | GET_BITS(x[1]))
-#define GET_BITS( x )    (INRANGE((x&(~0x20)),'A','F') ? ((x&(~0x20)) - 'A' + 0xa) : (INRANGE(x,'0','9') ? x - '0' : 0))
-
 // shit pasted dont even think about it
-static uintptr_t patternscan(const char* szModule, const char* szSignature)
-{
-	const char* pat = szSignature;
-	DWORD firstMatch = 0;
-	DWORD rangeStart = (DWORD)GetModuleHandleA(szModule);
-	MODULEINFO miModInfo;
-	GetModuleInformation(GetCurrentProcess(), (HMODULE)rangeStart, &miModInfo, sizeof(MODULEINFO));
-	DWORD rangeEnd = rangeStart + miModInfo.SizeOfImage;
-	for (DWORD pCur = rangeStart; pCur < rangeEnd; pCur++)
-	{
-		if (!*pat)
-			return firstMatch;
-
-		if (*(PBYTE)pat == '\?' || *(BYTE*)pCur == GET_BYTE(pat))
-		{
-			if (!firstMatch)
-				firstMatch = pCur;
-
-			if (!pat[2])
-				return firstMatch;
-
-			if (*(PWORD)pat == '\?\?' || *(PBYTE)pat != '\?')
-				pat += 3;
-
-			else
-				pat += 2;
-		}
-		else
-		{
-			pat = szSignature;
-			firstMatch = 0;
-		}
-	}
-	return 0u;
-}
-
-#define mintabeolvasás patternscan

@@ -130,24 +130,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Mag\KisHorgony\buffer.h" />
-    <ClInclude Include="Mag\KisHorgony\detour.hpp" />
-    <ClInclude Include="Mag\KisHorgony\hde\hde32.h" />
-    <ClInclude Include="Mag\KisHorgony\hde\hde64.h" />
-    <ClInclude Include="Mag\KisHorgony\hde\pstdint.h" />
-    <ClInclude Include="Mag\KisHorgony\hde\table32.h" />
-    <ClInclude Include="Mag\KisHorgony\hde\table64.h" />
-    <ClInclude Include="Mag\KisHorgony\minhook.h" />
-    <ClInclude Include="Mag\KisHorgony\trampoline.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\buffer.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\detour.hpp" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\hde\hde32.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\hde\hde64.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\hde\pstdint.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\hde\table32.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\hde\table64.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\minhook.h" />
+    <ClInclude Include="KülsőBővítmények\KisHorgony\trampoline.h" />
+    <ClInclude Include="Mag\Felület\felületek.h" />
+    <ClInclude Include="Mag\Felület\Felületek\felszín.h" />
+    <ClInclude Include="Mag\Felület\Felületek\motorgff.h" />
+    <ClInclude Include="Mag\Felület\Felületek\tábla.h" />
+    <ClInclude Include="Mag\Horgony\horgonyok.h" />
     <ClInclude Include="Mag\magyar.h" />
+    <ClInclude Include="Mag\SegédEszközök.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Mag\DllFő.cpp" />
-    <ClCompile Include="Mag\KisHorgony\buffer.c" />
-    <ClCompile Include="Mag\KisHorgony\hde\hde32.c" />
-    <ClCompile Include="Mag\KisHorgony\hde\hde64.c" />
-    <ClCompile Include="Mag\KisHorgony\hook.c" />
-    <ClCompile Include="Mag\KisHorgony\trampoline.c" />
+    <ClCompile Include="KülsőBővítmények\KisHorgony\buffer.c" />
+    <ClCompile Include="KülsőBővítmények\KisHorgony\hde\hde32.c" />
+    <ClCompile Include="KülsőBővítmények\KisHorgony\hde\hde64.c" />
+    <ClCompile Include="KülsőBővítmények\KisHorgony\hook.c" />
+    <ClCompile Include="KülsőBővítmények\KisHorgony\trampoline.c" />
+    <ClCompile Include="Mag\Felület\felületek.cpp" />
+    <ClCompile Include="Mag\Horgony\horgonyok.cpp" />
+    <ClCompile Include="Mag\Horgony\Horgonyok\FestőÁthaladás.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
