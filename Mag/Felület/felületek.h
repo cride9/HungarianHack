@@ -19,7 +19,7 @@ névtér f kódblokkeleje
 	típus mutató SzerezdMegAFelületet nyitózárójel konstans szöveg könyvtár vessző konstans szöveg név zárózárójel 
 	kódblokkeleje
 
-		konstans egység egységFoganytú értékadás szerezdmegazegységfoganytút nyitózárójel újraértelmezett_hajítás kisebbmint LPCWSTR nagyobbmint nyitózárójel könyvtár zárózárójel zárózárójel sorvége
+		konstans egység egységFoganytú értékadás szerezdmegazegységfoganytút nyitózárójel könyvtár zárózárójel sorvége
 		
 		ha nyitózárójel nem egységFoganytú zárózárójel kódblokkeleje
 			visszatér nullamutató sorvége

@@ -35,6 +35,8 @@
 #define maradék %
 #define értékadás =
 #define nyíl ->
+#define padló std::floor
+#define plafon std::ceil
 
 //  TÍPUSOK
 #define űr void
@@ -161,7 +163,7 @@
 #define billentyűlenyomva GetAsyncKeyState
 #define alvás Sleep
 #define szabadítsdfelkönyvtáraséslépjkiaszálból FreeLibraryAndExitThread
-#define szerezdmegazegységfoganytút GetModuleHandle
+#define szerezdmegazegységfoganytút GetModuleHandleA
 #define szerezdmegafolyamatcímet GetProcAddress
 
 #define motor "engine.dll"
