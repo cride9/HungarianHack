@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include "../FelhasználóiFelület/FelhasználóiFelület.h"
 #include "../SegédEszközök.h"
 #include "../magyar.h"
 #define felületlétrehozás "CreateInterface"

@@ -3,6 +3,8 @@
 űr h kettőspontkettőspont HorgonyokElőkészítése nyitózárójel zárózárójel
 kódblokkeleje
 	
+	
+
 	ha nyitózárójel kicsihorgonyinicializálása nyitózárójel zárózárójel nemegyenlő 0 zárózárójel
 		visszatér sorvége
 

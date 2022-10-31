@@ -30,6 +30,7 @@
 #define maradékegyenlő %=
 #define osztásegyenlő /=
 #define osztás /
+#define szorzás *
 #define összeadás +
 #define kivonás -
 #define maradék %
@@ -37,6 +38,7 @@
 #define nyíl ->
 #define padló std::floor
 #define plafon std::ceil
+#define kérdőjel ?
 
 //  TÍPUSOK
 #define űr void
@@ -54,6 +56,16 @@
 #define szöveg char *
 #define konstans const
 #define rekord struct
+#define alapszöveg std::string
+
+// windows stuff
+#define koordináta POINT
+#define képernyőklienshez ScreenToClient
+#define keresdmegablakot FindWindowA
+
+// cpp things
+#define általános std
+#define tömb array
 
 //  POINTEREK
 #define egészmutató int *
@@ -124,6 +136,9 @@
 #define típusnév typename
 #define használ using
 #define ez this
+#define új new
+#define törlés delete
+#define előrelétrehozottkonstant constexpr
 
 #define felsorolás enum
 #define osztály class
@@ -165,6 +180,7 @@
 #define szabadítsdfelkönyvtáraséslépjkiaszálból FreeLibraryAndExitThread
 #define szerezdmegazegységfoganytút GetModuleHandleA
 #define szerezdmegafolyamatcímet GetProcAddress
+#define szerezdmegakurzorpozíciót GetCursorPos
 
 #define motor "engine.dll"
 #define kl_mozgásminta "55 8B EC 81 EC ? ? ? ? 53 56 8A F9"
