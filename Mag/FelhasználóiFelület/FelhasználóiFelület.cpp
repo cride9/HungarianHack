@@ -44,22 +44,22 @@ kódblokkeleje
 	kódblokkvége
 
 	állandó alapszöveg CÉLZÁSSEGÍTŐ_FŐ szögletesnyitózárójel szögleteszárózárójel értékadás kódblokkeleje "alap" vessző "vegyes" kódblokkvége sorvége
-	RajzoljAblakot nyitózárójel kezdőX összeadás 5 vessző kezdőY összeadás 35 vessző kezdőX összeadás  nyitózárójel szélesség osztás 2 zárózárójel  kivonás 5 vessző kezdőY összeadás  nyitózárójel magasság osztás 2 zárózárójel  kivonás 5 vessző true vessző 2 vessző célzásSegítőAblakok[KIVÁLASZTOTT_CÉLZÁSSEGÍTŐ_FŐ] vessző CÉLZÁSSEGÍTŐ_FŐ zárózárójel  sorvége
+	RajzoljAblakot nyitózárójel kezdőX összeadás 5 vessző kezdőY összeadás 35 vessző kezdőX összeadás  nyitózárójel szélesség osztás 2 zárózárójel  kivonás 5 vessző kezdőY összeadás  nyitózárójel magasság osztás 2 zárózárójel  kivonás 5 vessző igaz vessző 2 vessző célzásSegítőAblakok[KIVÁLASZTOTT_CÉLZÁSSEGÍTŐ_FŐ] vessző CÉLZÁSSEGÍTŐ_FŐ zárózárójel  sorvége
 
-	állandó logikai haha értékadás false sorvége
+	állandó logikai haha értékadás hamis sorvége
 	RajzoljJelölőNégyzetet nyitózárójel "teszt1" vessző haha zárózárójel  sorvége
 
-	RajzoljAblakot nyitózárójel kezdőX összeadás 5 vessző kezdőY összeadás  nyitózárójel magasság osztás 2 zárózárójel  vessző kezdőX összeadás  nyitózárójel szélesség osztás 2 zárózárójel  kivonás 5 vessző kezdőY összeadás magasság kivonás 5 vessző false vessző 0 vessző célzásSegítőAblakok[KIVÁLASZTOTT_CÉLZÁSSEGÍTŐ_EXTRÁK] vessző CÉLZÁSSEGÍTŐ_FŐ zárózárójel  sorvége
+	RajzoljAblakot nyitózárójel kezdőX összeadás 5 vessző kezdőY összeadás  nyitózárójel magasság osztás 2 zárózárójel  vessző kezdőX összeadás  nyitózárójel szélesség osztás 2 zárózárójel  kivonás 5 vessző kezdőY összeadás magasság kivonás 5 vessző hamis vessző 0 vessző célzásSegítőAblakok[KIVÁLASZTOTT_CÉLZÁSSEGÍTŐ_EXTRÁK] vessző CÉLZÁSSEGÍTŐ_FŐ zárózárójel  sorvége
 
-	állandó logikai haha2 értékadás false sorvége
+	állandó logikai haha2 értékadás hamis sorvége
 	RajzoljJelölőNégyzetet nyitózárójel "teszt2" vessző haha2 zárózárójel  sorvége
 
 	állandó alapszöveg CÉLZÁSSEGÍTŐ_FEGYVEREK szögletesnyitózárójel szögleteszárózárójel értékadás kódblokkeleje "automata" vessző "felderito" vessző "shr" vessző "pisztoly" vessző "npisztoly" vessző "egyéb" kódblokkvége sorvége
-	RajzoljAblakot nyitózárójel kezdőX összeadás  nyitózárójel szélesség osztás 2 zárózárójel vessző kezdőY összeadás 35 vessző kezdőX összeadás szélesség kivonás 5 vessző kezdőY összeadás magasság kivonás 5 vessző true vessző 6 vessző célzásSegítőAblakok[KIVÁLASZTOTT_CÉLZÁSSEGÍTŐ_FEGYVEREK] vessző CÉLZÁSSEGÍTŐ_FEGYVEREK zárózárójel  sorvége
+	RajzoljAblakot nyitózárójel kezdőX összeadás  nyitózárójel szélesség osztás 2 zárózárójel vessző kezdőY összeadás 35 vessző kezdőX összeadás szélesség kivonás 5 vessző kezdőY összeadás magasság kivonás 5 vessző igaz vessző 6 vessző célzásSegítőAblakok[KIVÁLASZTOTT_CÉLZÁSSEGÍTŐ_FEGYVEREK] vessző CÉLZÁSSEGÍTŐ_FEGYVEREK zárózárójel  sorvége
 
-	állandó logikai haha3 értékadás false sorvége
+	állandó logikai haha3 értékadás hamis sorvége
 	RajzoljJelölőNégyzetet nyitózárójel "teszt3" vessző haha3 zárózárójel  sorvége
-	állandó logikai haha4 értékadás false sorvége
+	állandó logikai haha4 értékadás hamis sorvége
 	RajzoljJelölőNégyzetet nyitózárójel "teszt4" vessző haha4 zárózárójel  sorvége
 kódblokkvége
 
@@ -113,14 +113,14 @@ kódblokkvége
 űr felhasználóifelület kettőspontkettőspont RajzoljJelölőNégyzetet nyitózárójel konstans szöveg feltüntetés vessző logikai referencia érték zárózárójel
 kódblokkeleje
 
-	állandó logikai megnyomtad értékadás false sorvége
+	állandó logikai megnyomtad értékadás hamis sorvége
 
 	Felszín nyíl RajzSzínÁllítás nyitózárójel ablakKörvonal zárózárójel  sorvége
 	Felszín nyíl RajzKörvonalNégyzet nyitózárójel mostaniPozícióX kivonás 1 vessző mostaniPozícióY kivonás 1 vessző mostaniPozícióX összeadás 13 vessző mostaniPozícióY összeadás 13 zárózárójel  sorvége
 
 	ha  nyitózárójel Felszín nyíl EgérATérségbenVanE nyitózárójel mostaniPozícióX kivonás 1 vessző mostaniPozícióY kivonás 1 vessző mostaniPozícióX összeadás 13 vessző mostaniPozícióY összeadás 13 zárózárójel  zárózárójel  kódblokkeleje
 
-		ha  nyitózárójel !érték zárózárójel  kódblokkeleje
+		ha  nyitózárójel nem érték zárózárójel  kódblokkeleje
 
 			Felszín nyíl RajzSzínÁllítás nyitózárójel mellékAblakBelsejeKijelölve zárózárójel  sorvége
 			Felszín nyíl RajzTöltöttNégyzet nyitózárójel mostaniPozícióX összeadás 1 vessző mostaniPozícióY összeadás 1 vessző mostaniPozícióX összeadás 11 vessző mostaniPozícióY összeadás 11 zárózárójel  sorvége
@@ -128,13 +128,13 @@ kódblokkeleje
 
 		ha  nyitózárójel GetAsyncKeyState nyitózárójel VK_LBUTTON zárózárójel  zárózárójel  kódblokkeleje
 
-			ha  nyitózárójel !megnyomtad zárózárójel  kódblokkeleje
-				megnyomtad értékadás true sorvége
-				érték értékadás !érték sorvége
+			ha  nyitózárójel nem megnyomtad zárózárójel  kódblokkeleje
+				megnyomtad értékadás igaz sorvége
+				érték értékadás nem érték sorvége
 			kódblokkvége
 		kódblokkvége
 		különben
-			megnyomtad értékadás false sorvége
+			megnyomtad értékadás hamis sorvége
 	kódblokkvége
 
 
@@ -144,7 +144,7 @@ kódblokkeleje
 		Felszín nyíl RajzTöltöttNégyzet nyitózárójel mostaniPozícióX összeadás 1 vessző mostaniPozícióY összeadás 1 vessző mostaniPozícióX összeadás 11 vessző mostaniPozícióY összeadás 11 zárózárójel  sorvége
 	kódblokkvége
 
-	Felszín nyíl RajzoljSzöveget nyitózárójel mostaniPozícióX összeadás 18 vessző mostaniPozícióY kivonás 2 vessző 212 vessző 212 vessző 212 vessző 255 vessző felhasználóiFelületBetűtípus vessző false vessző feltüntetés zárózárójel  sorvége
+	Felszín nyíl RajzoljSzöveget nyitózárójel mostaniPozícióX összeadás 18 vessző mostaniPozícióY kivonás 2 vessző 212 vessző 212 vessző 212 vessző 255 vessző felhasználóiFelületBetűtípus vessző hamis vessző feltüntetés zárózárójel  sorvége
 
 	mostaniPozícióY megegyenlő 20 sorvége
 kódblokkvége
