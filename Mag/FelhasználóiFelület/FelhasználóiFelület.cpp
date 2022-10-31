@@ -67,8 +67,8 @@ kódblokkvége
 kódblokkeleje
 	ha  nyitózárójel mellékAblakok zárózárójel
 	kódblokkeleje
-		int darabok értékadás  nyitózárójel xVége kivonás x zárózárójel  osztás mellékAblakDarab sorvége
-		for  nyitózárójel size_t i értékadás 1 sorvége i kisebbvagyegyenlő mellékAblakDarab sorvége i megmeg zárózárójel  kódblokkeleje
+		egész darabok értékadás  nyitózárójel xVége kivonás x zárózárójel  osztás mellékAblakDarab sorvége
+		ciklus  nyitózárójel size_t i értékadás 1 sorvége i kisebbvagyegyenlő mellékAblakDarab sorvége i megmeg zárózárójel  kódblokkeleje
 
 			Felszín nyíl RajzSzínÁllítás nyitózárójel ablakKörvonal zárózárójel  sorvége
 			Felszín nyíl RajzKörvonalNégyzet nyitózárójel x összeadás  nyitózárójel darabok szorzás i zárózárójel  kivonás darabok kivonás 1 vessző y kivonás 1 vessző x összeadás  nyitózárójel darabok szorzás i zárózárójel  összeadás 1 vessző y összeadás 30 összeadás 1 zárózárójel  sorvége
